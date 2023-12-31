@@ -1,0 +1,4 @@
+def Voltag_Speichern():
+    dateispeicher=open('v_bat.txt', 'a')
+    dateispeicher.write(str(sum(Voltage_Bat)/len(Voltage_Bat))+"\n")
+    dateispeicher.close()
